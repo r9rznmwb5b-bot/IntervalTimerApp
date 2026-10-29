@@ -14,6 +14,7 @@ class TimerActivity : AppCompatActivity() {
     private lateinit var countdownTextView: TextView
     private lateinit var startPauseButton: Button
     private lateinit var resetButton: Button
+    private lateinit var backToSettingsButton: Button
 
     private var workSeconds = 0
     private var restSeconds = 0
@@ -38,11 +39,13 @@ class TimerActivity : AppCompatActivity() {
         countdownTextView = findViewById(R.id.countdownTextView)
         startPauseButton = findViewById(R.id.startPauseButton)
         resetButton = findViewById(R.id.resetButton)
+        backToSettingsButton = findViewById(R.id.backToSettingsButton)
 
         startPauseButton.setOnClickListener {
             if (isRunning) pauseTimer() else startTimer()
         }
         resetButton.setOnClickListener { resetWorkout() }
+        backToSettingsButton.setOnClickListener { finish() }
 
         resetWorkout()
     }
