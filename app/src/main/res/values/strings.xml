@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Interval Timer</string>
+    <string name="timer_title">Интервальная тренировка</string>
+    <string name="timer_subtitle">Настройте нагрузку и начните тренировку</string>
+    <string name="work_duration_hint">Работа, секунды</string>
+    <string name="rest_duration_hint">Отдых, секунды</string>
+    <string name="round_count_hint">Количество кругов</string>
+    <string name="default_work_duration">30</string>
+    <string name="default_rest_duration">15</string>
+    <string name="default_round_count">5</string>
+    <string name="start_workout">Начать тренировку</string>
+</resources>
